@@ -1,0 +1,8 @@
+<h1 class="py-3">Ajoutez une liste de film</h1>
+<%= simple_form_for(@list) do |f| %>
+  <%= f.input :name %>
+  <%= f.submit %>
+<% end %>
+
+
+<%= link_to "Back to list ", lists_path %>

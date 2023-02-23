@@ -1,0 +1,8 @@
+<%= render 'shared/banner' %>
+<div class="container bg-dark-subtle">
+  <div class="movies-lists">
+    <% @lists.each do |list| %>
+    <%= link_to list.name,  list_path(list), class: 'btn btn-warning' %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<h1 class="py-3">Ajoutez un bookmark au film</h1>
+<%= simple_form_for [@list, @bookmark] do |f| %>
+  <%= f.input :comment %>
+  <%= f.association :movie, collection: Movie.all %>
+  <%= f.submit %>
+<% end %>
+
+<%= link_to "Back to list ", lists_path %>

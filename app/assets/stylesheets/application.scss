@@ -10,3 +10,10 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "components/navbar";
+@import "components/banner";
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
